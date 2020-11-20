@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მთავარი</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="images/logo.svg" alt="main logo image">
+        </a>
+
+        <div class="header-category">
+            <div class="burger-menu" onclick="showMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <p>ყველა კატეგორია</p>
+        </div>
+
+        <div class="search">
+            <form action="">
+                <input type="text" name="search-text" id="search-text" placeholder="მოძებნე მარტივად">
+                <button class="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <path id="search" d="M19.726,18.462l-3.337-3.313a8.092,8.092,0,1,0-1.25,1.251l3.31,3.313a.894.894,0,1,0,1.277-1.251ZM10.093,16.4a6.3,6.3,0,1,1,6.3-6.3,6.3,6.3,0,0,1-6.3,6.3Z" transform="translate(-1.979 -1.979)" fill="#fff"/>
+                    </svg> 
+                </button>
+            </form>
+        </div>
+        <div class="header-right">
+            <a href="cart.html" class="cart">
+                <img src="images/cart.svg" alt="cart image">
+                <span>
+                    <p>4</p>
+                </span>
+            </a>
+            <div class="user" onclick="openLogin()">
+                <img src="images/user.svg" alt="user image">
+                ავტორიზაცია
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="menu-background">
+            <div class="menu-container">
+                <div class="menu-inside">
+                    <nav class="header-nav footer-nav">
+                        <ul>
+                            <a href="index.html">მთავარი</a>
+                            <a href="about.html">ჩვენ შესახებ</a>
+                            <a href="rules.html">წესები და პირობები</a>
+                            <a href="">მიტანის სერვისი</a>
+                            <a href="contact.html">კონტაქტი</a>
+                        </ul>
+                    </nav>
+    
+                    <div class="category-wrapper">
+                        <ul class="category-container menu-category">
+                            <li onmouseover="showSubCategories()" onmouseout="hideSubCategories()">
+                                <a href="">თაბაშირ-მუყაო
+                                <i class='fas fa-chevron-right'></i>    
+                                </a>    
+                            </li>
+                            <li onmouseover="showSubCategories()" onmouseout="hideSubCategories()">
+                                <a href="">კერამიკული ფილები
+                                <i class='fas fa-chevron-right'></i>
+                                </a>    
+                            </li>
+                            <li onmouseover="showSubCategories()" onmouseout="hideSubCategories()">
+                                <a href="">იატაკი
+                                <i class='fas fa-chevron-right'></i>
+                                </a>    
+                            </li>
+                            <li onmouseover="showSubCategories()" onmouseout="hideSubCategories()">
+                                <a href="">სამღებრო
+                                <i class='fas fa-chevron-right'></i>
+                                </a>    
+                            </li>
+                            <li onmouseover="showSubCategories()" onmouseout="hideSubCategories()">
+                                <a href="">ხელსაწყოები
+                                <i class='fas fa-chevron-right'></i>
+                                </a>    
+                            </li>
+                            <li onmouseover="showSubCategories()" onmouseout="hideSubCategories()">
+                                <a href="">კარი
+                                <i class='fas fa-chevron-right'></i>
+                                </a>    
+                            </li>
+                            <li onmouseover="showSubCategories()" onmouseout="hideSubCategories()">
+                                <a href="">ელექტროობა
+                                <i class='fas fa-chevron-right'></i>
+                                </a>    
+                            </li>
+                            <li onmouseover="showSubCategories()" onmouseout="hideSubCategories()">
+                                <a href="">შპალერი და დეკორი
+                                <i class='fas fa-chevron-right'></i>
+                                </a>    
+                            </li>
+                            <li onmouseover="showSubCategories()" onmouseout="hideSubCategories()">
+                                <a href="">სანტექნიკა
+                                <i class='fas fa-chevron-right'></i>
+                                </a>    
+                            </li>
+                            <li onmouseover="showSubCategories()" onmouseout="hideSubCategories()">
+                                <a href="">სამონტაჟო ჭერი
+                                <i class='fas fa-chevron-right'></i>
+                                </a>    
+                            </li>
+                            <li onmouseover="showSubCategories()" onmouseout="hideSubCategories()">
+                                <a href="">მშენებლობა
+                                <i class='fas fa-chevron-right'></i>
+                                </a>    
+                            </li>
+                        </ul>
+
+                        <ul class="sub-category">
+                            <li>
+                                <a href="">კატეგორია 1</a>  
+                            </li>
+                            <li>
+                                <a href="">კატეგორია 2</a>  
+                            </li>
+                            <li>
+                                <a href="">კატეგორია 3</a>  
+                            </li>
+                            <li>
+                                <a href="">კატეგორია 4</a>  
+                            </li>
+                            <li>
+                                <a href="">კატეგორია 5</a>  
+                            </li>
+                            <li>
+                                <a href="">კატეგორია 1</a>  
+                            </li>
+                            <li>
+                                <a href="">კატეგორია 2</a>  
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login_background">
+            <div class="login-container">
+                <div class="login registration">
+                    <div class="login__center registration__center">
+                        <div class="login_top">
+                            <span class="login_close" onclick="closeLogin()">
+                                <img src="images/close.svg" alt="close(x) button">
+                            </span>
+                            <h1>ავტორიზაცია</h1>
+                        </div>
+                        <div class="authorization">
+                            <form class="authorization__form" action="">
+                                <div class="email">
+                                    <label for="mail">ელ. ფოსტა</label>
+                                    <div class="input-email">
+                                        <svg id="Component_19_2" class="input-img"data-name="Component 19 – 2" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                            <rect id="Rectangle_262" data-name="Rectangle 262" width="22" height="22" fill="rgba(255,255,255,0)"/>
+                                            <path id="envelope" d="M17.3,4H4.7A2.663,2.663,0,0,0,2,6.625v8.75A2.663,2.663,0,0,0,4.7,18H17.3A2.663,2.663,0,0,0,20,15.375V6.625A2.663,2.663,0,0,0,17.3,4Zm-.369,1.75-5.292,5.145a.918.918,0,0,1-1.278,0L5.069,5.75ZM18.2,15.375a.888.888,0,0,1-.9.875H4.7a.888.888,0,0,1-.9-.875V6.984l5.292,5.145a2.755,2.755,0,0,0,3.816,0L18.2,6.984Z" fill="#D0D0D0"/>
+                                        </svg>
+                                        <input type="email" placeholder="mikheilgogiberidze@gmail.com" onfocus="focusedLabel(this)" onblur="blurredLabel(this)">
+                                        <img src="images/success.svg" alt="correct img" class="check-mail">
+                                    </div>
+                                </div>
+                                <div class="password">  
+                                    <label for="password">პაროლი</label>    
+                                    <div class="input-password">
+                                        <svg id="Component_20_2" class="input-img" data-name="Component 20 – 2" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                            <rect id="Rectangle_263" data-name="Rectangle 263" width="22" height="22" fill="rgba(255,255,255,0)"/>
+                                            <path id="lock" d="M15.375,8.3V6.5A4.439,4.439,0,0,0,11,2,4.439,4.439,0,0,0,6.625,6.5V8.3A2.663,2.663,0,0,0,4,11v6.3A2.663,2.663,0,0,0,6.625,20h8.75A2.663,2.663,0,0,0,18,17.3V11A2.663,2.663,0,0,0,15.375,8.3Zm-7-1.8a2.626,2.626,0,1,1,5.25,0V8.3H8.375ZM16.25,17.3a.888.888,0,0,1-.875.9H6.625a.888.888,0,0,1-.875-.9V11a.888.888,0,0,1,.875-.9h8.75a.888.888,0,0,1,.875.9Z" fill="#D0D0D0"/>
+                                        </svg>                                      
+                                        <input type="password" onfocus="focusedLabel(this)" onblur="blurredLabel(this)">
+                                        <img src="images/failed.svg" alt="not correct img" class="check-password">
+                                    </div>
+                                </div>
+                                <button class="authorization-btn fill-orange">
+                                    ავტორიზაცია 
+                                </button> 
+                                <button type="button" class="pass-recovery-btn">
+                                    პაროლის აღდგენა
+                                </button> 
+                            </form>
+                            <button class="registration-btn open-registration">
+                                რეგისტრაცია
+                            </button>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="registration-container">
+                <div class="registration">
+                    <div class="registration__center">
+                        <div class="login_top"> 
+                            <div class="top_buttons">
+                                <span class="login_back">
+                                    <img class="login_back_img" src="images/arrow17.svg" alt="close(x) button">
+                                </span>
+                                <span class="login_close" onclick="closeLogin()">
+                                    <img src="images/close.svg" alt="close(x) button">
+                                </span>
+                            </div>
+                            <h1>რეგისტრაცია</h1>
+                        </div>
+                        <div class="authorization">
+                            <form class="authorization__form" action="">
+                                <div class="email">
+                                    <label for="mail">სახელი</label>
+                                    <div class="input-email">
+                                        <svg class="input-img" id="Component_3_5" data-name="Component 3 – 5" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                            <rect id="Rectangle_214" data-name="Rectangle 214" width="22" height="22" fill="rgba(255,255,255,0)"/>
+                                            <path id="user" d="M14.406,11.633a5.419,5.419,0,1,0-6.711,0,9,9,0,0,0-5.626,7.358.91.91,0,0,0,1.809.2,7.24,7.24,0,0,1,14.381,0,.9.9,0,0,0,.9.8h.1a.9.9,0,0,0,.8-.989,9,9,0,0,0-5.653-7.367Zm-3.355-.639a3.6,3.6,0,1,1,3.618-3.6A3.608,3.608,0,0,1,11.05,10.994Z" transform="translate(-0.064 0.005)" fill="#D0D0D0"/>
+                                        </svg>
+                                        <input type="email" onfocus="focusedLabel(this)" onblur="blurredLabel(this)">
+                                        <img src="images/success.svg" alt="correct img" class="check-mail">
+                                    </div>
+                                </div>
+                                <div class="email"> 
+                                    <label for="mail">გვარი</label>
+                                    <div class="input-email">
+                                        <svg class="input-img" id="Component_3_5" data-name="Component 3 – 5" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                            <rect id="Rectangle_214" data-name="Rectangle 214" width="22" height="22" fill="rgba(255,255,255,0)"/>
+                                            <path id="user" d="M14.406,11.633a5.419,5.419,0,1,0-6.711,0,9,9,0,0,0-5.626,7.358.91.91,0,0,0,1.809.2,7.24,7.24,0,0,1,14.381,0,.9.9,0,0,0,.9.8h.1a.9.9,0,0,0,.8-.989,9,9,0,0,0-5.653-7.367Zm-3.355-.639a3.6,3.6,0,1,1,3.618-3.6A3.608,3.608,0,0,1,11.05,10.994Z" transform="translate(-0.064 0.005)" fill="#D0D0D0"/>
+                                        </svg>
+                                        <input type="email" onfocus="focusedLabel(this)" onblur="blurredLabel(this)">
+                                        <img src="images/success.svg" alt="correct img" class="check-mail">
+                                    </div>
+                                </div>
+                                <div class="email">
+                                    <label for="mail">ელ. ფოსტა</label>
+                                    <div class="input-email">
+                                        <svg id="Component_19_2" class="input-img"data-name="Component 19 – 2" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                            <rect id="Rectangle_262" data-name="Rectangle 262" width="22" height="22" fill="rgba(255,255,255,0)"/>
+                                            <path id="envelope" d="M17.3,4H4.7A2.663,2.663,0,0,0,2,6.625v8.75A2.663,2.663,0,0,0,4.7,18H17.3A2.663,2.663,0,0,0,20,15.375V6.625A2.663,2.663,0,0,0,17.3,4Zm-.369,1.75-5.292,5.145a.918.918,0,0,1-1.278,0L5.069,5.75ZM18.2,15.375a.888.888,0,0,1-.9.875H4.7a.888.888,0,0,1-.9-.875V6.984l5.292,5.145a2.755,2.755,0,0,0,3.816,0L18.2,6.984Z" fill="#D0D0D0"/>
+                                        </svg>
+                                        <input type="email" placeholder="mikheilgogiberidze@gmail.com" onfocus="focusedLabel(this)" onblur="blurredLabel(this)">
+                                        <img src="images/success.svg" alt="correct img" class="check-mail">
+                                    </div>
+                                </div>
+                                <div class="email">
+                                    <label for="mail">ტელ. ნომერი</label>
+                                    <div class="input-email">
+                                        <svg id="Component_22_3" 
+                                        class="input-img"
+                                        data-name="Component 22 – 3" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                            <rect id="Rectangle_271" data-name="Rectangle 271" width="22" height="22" fill="rgba(255,255,255,0)"/>
+                                            <path id="mobile-android" d="M12.159,14.861l-.139-.108a.715.715,0,0,0-.167-.081l-.167-.072a.948.948,0,0,0-.845.243,1.031,1.031,0,0,0-.195.3.88.88,0,0,0,.2.979.95.95,0,0,0,1.009.2,1.36,1.36,0,0,0,.306-.2.88.88,0,0,0,.195-.981A.9.9,0,0,0,12.159,14.861ZM15.214,2H7.786A2.744,2.744,0,0,0,5,4.7V17.3A2.744,2.744,0,0,0,7.786,20h7.429A2.744,2.744,0,0,0,18,17.3V4.7A2.744,2.744,0,0,0,15.214,2Zm.929,15.3a.915.915,0,0,1-.929.9H7.786a.915.915,0,0,1-.929-.9V4.7a.915.915,0,0,1,.929-.9h7.429a.915.915,0,0,1,.929.9Z" transform="translate(-0.5)" fill="#D0D0D0"/>
+                                        </svg>
+                                        <input type="email" onfocus="focusedLabel(this)" onblur="blurredLabel(this)">
+                                        <img src="images/success.svg" alt="correct img" class="check-mail">
+                                    </div>
+                                </div>
+                                <div class="password">  
+                                    <label for="mail">პაროლი</label>
+                                    <div class="input-password">
+                                        <svg id="Component_20_2" class="input-img" data-name="Component 20 – 2" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                            <rect id="Rectangle_263" data-name="Rectangle 263" width="22" height="22" fill="rgba(255,255,255,0)"/>
+                                            <path id="lock" d="M15.375,8.3V6.5A4.439,4.439,0,0,0,11,2,4.439,4.439,0,0,0,6.625,6.5V8.3A2.663,2.663,0,0,0,4,11v6.3A2.663,2.663,0,0,0,6.625,20h8.75A2.663,2.663,0,0,0,18,17.3V11A2.663,2.663,0,0,0,15.375,8.3Zm-7-1.8a2.626,2.626,0,1,1,5.25,0V8.3H8.375ZM16.25,17.3a.888.888,0,0,1-.875.9H6.625a.888.888,0,0,1-.875-.9V11a.888.888,0,0,1,.875-.9h8.75a.888.888,0,0,1,.875.9Z" fill="#D0D0D0"/>
+                                        </svg>                                      
+                                        <input type="password" onfocus="focusedLabel(this)" onblur="blurredLabel(this)">
+                                        <img src="images/failed.svg" alt="not correct img" class="check-password">
+                                    </div>
+                                </div>
+                                <div class="password">  
+                                    <label for="mail">გაიმეორე პაროლი</label>
+                                    <div class="input-password">
+                                        <svg id="Component_20_2" class="input-img" data-name="Component 20 – 2" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                            <rect id="Rectangle_263" data-name="Rectangle 263" width="22" height="22" fill="rgba(255,255,255,0)"/>
+                                            <path id="lock" d="M15.375,8.3V6.5A4.439,4.439,0,0,0,11,2,4.439,4.439,0,0,0,6.625,6.5V8.3A2.663,2.663,0,0,0,4,11v6.3A2.663,2.663,0,0,0,6.625,20h8.75A2.663,2.663,0,0,0,18,17.3V11A2.663,2.663,0,0,0,15.375,8.3Zm-7-1.8a2.626,2.626,0,1,1,5.25,0V8.3H8.375ZM16.25,17.3a.888.888,0,0,1-.875.9H6.625a.888.888,0,0,1-.875-.9V11a.888.888,0,0,1,.875-.9h8.75a.888.888,0,0,1,.875.9Z" fill="#D0D0D0"/>
+                                        </svg>                                      
+                                        <input type="password" onfocus="focusedLabel(this)" onblur="blurredLabel(this)">
+                                        <img src="images/failed.svg" alt="not correct img" class="check-password">
+                                    </div>
+                                </div>
+                                <button class="registration-btn registration-orange">
+                                    რეგისტრაცია
+                                </button>  
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pass-recovery-container">
+                <div class="pass-recovery">
+                    <div class="pass-recovery__center">
+                        <div class="login_top"> 
+                            <div class="top_buttons">
+                                <span class="login_back" onclick="closePassRecovery()">
+                                    <img src="images/arrow17.svg" alt="close(x) button">
+                                </span>
+                                <span class="login_close" onclick="closeLogin()">
+                                    <img src="images/close.svg" alt="close(x) button">
+                                </span>
+                            </div>
+                            <h1>პაროლის აღდგენა</h1>
+                        </div>
+                        <div class="authorization">
+                            <form class="authorization__form" action="">
+                                <div class="email">
+                                    <label for="mail">ელ. ფოსტა</label>
+                                    <div class="input-email">
+                                        <svg id="Component_19_2" class="input-img"data-name="Component 19 – 2" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                                            <rect id="Rectangle_262" data-name="Rectangle 262" width="22" height="22" fill="rgba(255,255,255,0)"/>
+                                            <path id="envelope" d="M17.3,4H4.7A2.663,2.663,0,0,0,2,6.625v8.75A2.663,2.663,0,0,0,4.7,18H17.3A2.663,2.663,0,0,0,20,15.375V6.625A2.663,2.663,0,0,0,17.3,4Zm-.369,1.75-5.292,5.145a.918.918,0,0,1-1.278,0L5.069,5.75ZM18.2,15.375a.888.888,0,0,1-.9.875H4.7a.888.888,0,0,1-.9-.875V6.984l5.292,5.145a2.755,2.755,0,0,0,3.816,0L18.2,6.984Z" fill="#D0D0D0"/>
+                                        </svg>
+                                        <input type="email" placeholder="mikheilgogiberidze@gmail.com" onfocus="focusedLabel(this)" onblur="blurredLabel(this)">
+                                        <img src="images/success.svg" alt="correct img" class="check-mail">
+                                    </div>
+                                </div>
+                                <button class="registration-btn registration-orange">
+                                    პაროლის აღდგენა
+                                </button>  
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products_container">
+            <div class="breadcrumb-container">
+                <h1>ელ. ჩაქუჩი GBH 5-40 D #0611269020</h1>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="" class="breadcrumbs__link">მთავარი</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="" class="breadcrumbs__link">კატეგორია</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="" class="breadcrumbs__link active">ქვეკატეგორია</a>
+                    </li>   
+                </ul>
+                <p class="id">#13241</p>
+            </div>
+            <div class="product_inside">
+                <div class="product_inside__slider">
+                    <!-- Swiper -->
+                    <div class="swiper-container gallery-top">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/1055032.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1057222.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1059227.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1055032.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1055032.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1057222.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1059227.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1055032.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-container gallery-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/1055032.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1057222.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1059227.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1055032.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1055032.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1057222.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1059227.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/1055032.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <span class="arrow-next_prod">
+                        <img class="button_next" src="images/pagination-next.svg" alt="">
+                    </span>  
+                    <span class="arrow-prev_prod">
+                        <img class="button_prev" src="images/pagination-next.svg" alt="">   
+                    </span>
+                </div>
+                <div class="product_inside__left">
+                    <div class="prices">
+                        <div class="price">
+                            <b>22.50 ₾</b>
+                            <p>22.50 ₾</p>
+                        </div>
+                        <p class="id">#13241</p>
+                        <span class="discount-icon">
+                            <img src="images/discount-orange.svg" alt="">
+                        </span> 
+                    </div>
+                    <div class="spinner-cart">
+                        <div class="spinner">
+                            <button class="minus" type="button">
+                                <img src="images/minus.svg" alt="">
+                            </button>
+                            <input type="text" name="qty" readonly="readonly" value="12">
+                            <button class="plus" type="button">
+                                <img src="images/plus.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="cartButton-container">
+                            <button class="add-to-cart cartButton">
+                                <img class="cart-img" src="images/cart.svg" alt="cart image">
+                                <img class="added" src="images/added.svg" alt="added to cart image">
+                                <p class="add-to-cart_text cartText">კალათაში დამატება</p>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="product-text">საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-top">
+            <a class="footer-logo" href="index.html">
+                <img src="images/logo.svg" alt="main logo image">
+            </a>
+            <div class="mobile-footer-container">
+                <div class="mobile-footer">
+                    <a class="logo-footer" href="">
+                        <img src="images/logo-footer.svg" alt="main logo image">
+                    </a>
+                    <div class="burger-menu-footer" onclick="showMenu()">
+                        <div class="bar1 bar"></div>
+                        <div class="bar2 bar"></div>
+                        <div class="bar3 bar"></div>
+                    </div>
+                    <button class="search-btn-footer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                            <path id="search" d="M19.726,18.462l-3.337-3.313a8.092,8.092,0,1,0-1.25,1.251l3.31,3.313a.894.894,0,1,0,1.277-1.251ZM10.093,16.4a6.3,6.3,0,1,1,6.3-6.3,6.3,6.3,0,0,1-6.3,6.3Z" transform="translate(-1.979 -1.979)" fill="#fff"/>
+                        </svg>                      
+                    </button>
+                    <a href="" class="cart">
+                        <svg id="Component_5_2" data-name="Component 5 – 2" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                            <rect id="Rectangle_216" data-name="Rectangle 216" width="22" height="22" fill="rgba(255,255,255,0)"/>
+                            <path id="shopping-cart" d="M8.139,18.158a1.421,1.421,0,1,0,1.417,1.421A1.419,1.419,0,0,0,8.139,18.158Zm9.917-2.842H6.722a.947.947,0,0,1,0-1.895h8.019a2.847,2.847,0,0,0,2.725-2.061l1.5-5.257a.947.947,0,0,0-.908-1.208H6.476A2.84,2.84,0,0,0,3.815,3h-.87a.947.947,0,0,0,0,1.895h.87a.949.949,0,0,1,.908.687L4.87,6.1v0l1.549,5.44a2.843,2.843,0,0,0,.3,5.668H18.056a.947.947,0,0,0,0-1.895ZM16.8,6.789,15.65,10.839a.949.949,0,0,1-.908.687H8.379l-.241-.845L7.031,6.789ZM15.694,18.158a1.421,1.421,0,1,0,1.417,1.421A1.419,1.419,0,0,0,15.694,18.158Z" transform="translate(0.5 -1)" fill="#fff"/>
+                        </svg>                      
+                    </a>
+                    <div class="user" onclick="openLogin()">
+                        <svg id="Component_3_5" data-name="Component 3 – 5" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                            <rect id="Rectangle_214" data-name="Rectangle 214" width="22" height="22" fill="rgba(255,255,255,0)"/>
+                            <path id="user" d="M14.406,11.633a5.419,5.419,0,1,0-6.711,0,9,9,0,0,0-5.626,7.358.91.91,0,0,0,1.809.2,7.24,7.24,0,0,1,14.381,0,.9.9,0,0,0,.9.8h.1a.9.9,0,0,0,.8-.989,9,9,0,0,0-5.653-7.367Zm-3.355-.639a3.6,3.6,0,1,1,3.618-3.6A3.608,3.608,0,0,1,11.05,10.994Z" transform="translate(-0.064 0.005)" fill="#fff"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <a href="index.html">მთავარი</a>
+                    <a href="about.html">ჩვენ შესახებ</a>
+                    <a href="rules.html">წესები და პირობები</a>
+                    <a href="">მიტანის სერვისი</a>
+                    <a href="">კონტაქტი</a>
+                </ul>
+            </nav>
+            <div class="soc-icons">
+                <a href="" target="_blank" class="fb-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <path id="facebook" d="M19.01,2H2.99A.99.99,0,0,0,2,2.99V19.01a.99.99,0,0,0,.99.99h8.622V13.025H9.272v-2.7h2.34V8.3A3.276,3.276,0,0,1,15.1,4.7a18.234,18.234,0,0,1,2.1.108v2.43H15.77c-1.134,0-1.35.54-1.35,1.323V10.3h2.7L16.769,13H14.42v7h4.59a.99.99,0,0,0,.99-.99V2.99A.99.99,0,0,0,19.01,2Z" transform="translate(-2 -2)" fill="#ff613b"/>
+                      </svg>
+                </a>
+                <a href="" target="_blank" class="inst-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <path id="instagram-alt" d="M11,8.768A2.232,2.232,0,1,0,13.232,11,2.232,2.232,0,0,0,11,8.768Zm8.937-2.2a5.877,5.877,0,0,0-.378-2.034,3.6,3.6,0,0,0-2.088-2.088,5.877,5.877,0,0,0-2.034-.378C14.276,2,13.934,2,11,2s-3.276,0-4.437.063a5.877,5.877,0,0,0-2.034.378A3.6,3.6,0,0,0,2.441,4.529a5.877,5.877,0,0,0-.378,2.034C2,7.724,2,8.066,2,11s0,3.276.063,4.437a6.174,6.174,0,0,0,.378,2.043,3.546,3.546,0,0,0,.819,1.26,3.5,3.5,0,0,0,1.269.819,5.877,5.877,0,0,0,2.034.378C7.724,20,8.066,20,11,20s3.276,0,4.437-.063a5.877,5.877,0,0,0,2.034-.378,3.5,3.5,0,0,0,1.269-.819,3.546,3.546,0,0,0,.819-1.26,5.94,5.94,0,0,0,.378-2.043C20,14.276,20,13.934,20,11s0-3.276-.063-4.437Zm-2.286,7.2a5.157,5.157,0,0,1-.351,1.62A3.474,3.474,0,0,1,15.383,17.3a5.157,5.157,0,0,1-1.629.315H8.246A5.157,5.157,0,0,1,6.617,17.3,3.35,3.35,0,0,1,4.7,15.383a4.941,4.941,0,0,1-.306-1.629c0-.711,0-.9,0-2.754V8.246A4.941,4.941,0,0,1,4.7,6.617a3.159,3.159,0,0,1,.774-1.179A3.231,3.231,0,0,1,6.617,4.7a5.157,5.157,0,0,1,1.629-.315h5.508a5.157,5.157,0,0,1,1.629.315A3.35,3.35,0,0,1,17.3,6.617a5.157,5.157,0,0,1,.315,1.629c0,.711,0,.9,0,2.754s.063,2.043.036,2.754Zm-1.44-6.7A2.142,2.142,0,0,0,14.942,5.8,3.6,3.6,0,0,0,13.7,5.6H8.3a3.6,3.6,0,0,0-1.242.234A2.142,2.142,0,0,0,5.789,7.058,3.843,3.843,0,0,0,5.6,8.3v5.4a3.843,3.843,0,0,0,.234,1.242A2.142,2.142,0,0,0,7.1,16.211a3.843,3.843,0,0,0,1.2.234h5.4a3.6,3.6,0,0,0,1.242-.234,2.142,2.142,0,0,0,1.269-1.269,3.6,3.6,0,0,0,.234-1.242V8.3a3.4,3.4,0,0,0-.234-1.242ZM11,14.438A3.429,3.429,0,0,1,7.571,11h0A3.438,3.438,0,1,1,11,14.438Zm3.6-6.2a.81.81,0,0,1,0-1.611h0a.81.81,0,0,1,0,1.611Z" transform="translate(-2 -2)" fill="#d0d0d0"/>
+                      </svg>
+                </a>
+                <a href="" target="_blank" class="twit-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15">
+                        <path id="twitter" d="M20,5.646a7.5,7.5,0,0,1-2.124.59A3.79,3.79,0,0,0,19.5,4.145a7.287,7.287,0,0,1-2.349.921A3.629,3.629,0,0,0,12.7,4.3a3.81,3.81,0,0,0-1.848,4.217,10.4,10.4,0,0,1-7.6-3.952,3.9,3.9,0,0,0-.5,1.907A3.793,3.793,0,0,0,4.394,9.608a3.581,3.581,0,0,1-1.674-.47v.046a3.756,3.756,0,0,0,2.97,3.685,3.462,3.462,0,0,1-.99.157,4.311,4.311,0,0,1-.693-.064,3.71,3.71,0,0,0,3.447,2.616A7.29,7.29,0,0,1,2.9,17.2a6.975,6.975,0,0,1-.9-.055,10.239,10.239,0,0,0,5.661,1.7,10.308,10.308,0,0,0,7.475-3.117A10.809,10.809,0,0,0,18.2,8.088V7.6A7.7,7.7,0,0,0,20,5.646Z" transform="translate(-2 -3.849)" fill="#d0d0d0"/>
+                      </svg>
+                </a>    
+            </div>
+        </div>   
+        <div class="footer-bottom">
+            <p class="allrights">ყველა უფლება დაცულია.</p>
+            <p class="company">დამზადებულია <a href="http://smartweb.ge" target="_blank">Smartweb</a> - ში</p>
+        </div>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
